@@ -1,18 +1,18 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "description": "Backend of our application cryptoview360",
-  "main": "server.js",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "start": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "vaibhav, santosh, priyanshu, shivang",
+  "author": "cryptoview360",
   "license": "ISC",
   "dependencies": {
     "connect-flash": "^0.1.1",
     "connect-mongo": "^4.6.0",
     "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
     "crypto": "^1.0.1",
     "cssnano": "^6.0.0",
     "del": "^7.0.0",
