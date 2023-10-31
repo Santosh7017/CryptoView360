@@ -6,12 +6,18 @@ import ReactHtmlParser from "react-html-parser";
 import CoinInfo from "../homePageComponents/CoinInfo";
 import { SingleCoin } from "../config/api";
 import { numberWithCommas } from "../homePageComponents/coinsTable";
+/* Importing the `CryptoState` object from the `../CryptoContext` file. This object is likely used to
+store and manage global state related to cryptocurrency data in the application. */
 import { CryptoState } from "../CryptoContext";
 
 const CoinPage = () => {
     const { id } = useParams();
     const [coin, setCoin] = useState();
 
+    /* `const { currency, symbol } = CryptoState();` is destructuring the `currency` and `symbol`
+    variables from the `CryptoState` object. This object likely contains global state related to
+    cryptocurrency data in the application, and `currency` and `symbol` are likely used to determine
+    the user's preferred currency and symbol for displaying cryptocurrency data. */
     const { currency, symbol } = CryptoState();
 
     const fetchCoin = async () => {
